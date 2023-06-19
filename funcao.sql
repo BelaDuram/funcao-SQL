@@ -1,3 +1,8 @@
+---Banco de Dados II
+---Desenvolvimento IV
+--- Função com a linguagem  PL/SQL. Linguagem PL/SQL é uma extensão da linguagem SQL.
+
+---Instruções do projeto
 ---Uma loja tem um banco de dados que contém todo o controle de vendas de produtos e de cadastro de clientes. Pensando nisso, crie uma função para somar todos os clientes que foram cadastrados na loja durante um dia.
 
 -- Criação da tabela de produtos
@@ -38,7 +43,8 @@ VALUES
 
 -- Função para somar clientes cadastrados em um dia específico.
 CREATE OR REPLACE FUNCTION somar_clientes_por_dia(data_pesquisa VARCHAR)
-RETURNS INTEGER AS
+RETURNS INTEGER 
+AS
 $$
 DECLARE
     total_clientes INTEGER;
